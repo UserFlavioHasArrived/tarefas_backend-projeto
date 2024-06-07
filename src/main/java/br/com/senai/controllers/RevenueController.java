@@ -50,6 +50,7 @@ public class RevenueController {
                 .findById(id).orElseThrow();
         Revenue updateRevenue = new Revenue();
         //Seta os updates nos produtos já criados
+        updateRevenue.setId(id);
         updateRevenue.setName(revenue.getName());
         updateRevenue.setIntroduction(getRevenue.getIntroduction());
         updateRevenue.setIngredient(getRevenue.getIngredient());
